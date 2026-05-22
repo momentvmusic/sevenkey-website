@@ -427,8 +427,11 @@ section{ position:relative; }
   .demo__text{ flex:1; }
   .release-card{ flex-direction:column; align-items:flex-start; }
   .release-card__disc{ display:none; }
-  .release-card__art{ width:100%; height:auto; aspect-ratio:1; }
-  .hero{ align-items:flex-end; }
+  .release-card__art{ width:100%; max-width:300px; height:auto; aspect-ratio:1; }
+  /* Top-align on mobile so the tall hero content clears the fixed nav */
+  .hero{ align-items:flex-start; padding-top:104px; padding-bottom:clamp(3rem,12vw,4.5rem); }
+  .hero__title{ margin-top:.8rem; }
+  .scroll-hint{ display:none; }
   .footer__base{ flex-direction:column; }
 }
 
