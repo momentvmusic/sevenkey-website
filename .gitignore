@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary preview / render files
+_preview.html
+_shot*.html
+_preview_*.png
+*.tmp
+
+# Editor / tooling
+.vscode/
+.idea/
+.claude/
+
+# Unused heavy assets (not referenced by the site — kept locally, not deployed)
+assets/image/PORTADA HEADER.jpg
+assets/image/PRESSKIT 2026.pdf

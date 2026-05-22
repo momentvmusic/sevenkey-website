@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>SEVENKEY — Afro House · House · Indie Dance</title>
+<meta name="description" content="Official site of Sevenkey, Colombian DJ & producer. New single 'Heaven' out now. Afro House, House & Indie Dance sounds — 8M+ listeners worldwide." />
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23070708'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='46' font-weight='900' fill='%23ff6a1a'%3ES%3C/text%3E%3C/svg%3E" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800;900&family=Chakra+Petch:wght@400;500;600;700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+<!-- ░░ AMBIENT BACKGROUND LAYERS ░░ -->
+<div class="bg-field" aria-hidden="true">
+  <div class="orb orb--1"></div>
+  <div class="orb orb--2"></div>
+  <div class="orb orb--3"></div>
+  <div class="grid-lines"></div>
+  <div class="grain"></div>
+</div>
+<div class="cursor-glow" aria-hidden="true"></div>
+
+<!-- ░░ NAV ░░ -->
+<header class="nav" id="nav">
+  <a class="nav__brand" href="#top" aria-label="Sevenkey — home">
+    <img src="assets/image/SEVENKEY%20LOGO%20WHITE.png" alt="Sevenkey" />
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#singles">Releases</a>
+    <a href="#playlist">This Is Sevenkey</a>
+    <a href="#videos">Videos</a>
+    <a href="#about">About</a>
+  </nav>
+  <a class="nav__cta" href="https://open.spotify.com/intl-es/track/0nZOUp2o554fSrqqvlqPxd" target="_blank" rel="noopener">
+    <span class="dot"></span> Listen
+  </a>
+  <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span>
+  </button>
+</header>
+
+<!-- ░░ HERO / NEW RELEASE ░░ -->
+<section class="hero" id="top">
+  <div class="hero__media" aria-hidden="true">
+    <img class="hero__photo" id="heroPhoto" src="assets/image/BEATPORT%20PROFILE.jpg" alt="" />
+    <div class="hero__scrim"></div>
+    <div class="hero__scrim hero__scrim--bottom"></div>
+  </div>
+
+  <div class="hero__side" aria-hidden="true">
+    <span>EST. 2016</span>
+    <span class="hero__side-line"></span>
+    <span>AFRO HOUSE · HOUSE · INDIE DANCE</span>
+  </div>
+
+  <div class="hero__inner">
+    <span class="eyebrow reveal" data-d="1">
+      <span class="pulse"></span> New Release
+    </span>
+    <h1 class="hero__title reveal" data-d="2">HEAVEN</h1>
+    <p class="hero__sub reveal" data-d="3">
+      The brand-new single from Sevenkey. A weightless melodic ride —
+      out now on every platform.
+    </p>
+
+    <div class="release-card glass glass--tint reveal" data-d="4" id="releaseCard">
+      <a class="release-card__art" href="https://open.spotify.com/intl-es/track/0nZOUp2o554fSrqqvlqPxd" target="_blank" rel="noopener" aria-label="Open Heaven on Spotify">
+        <img src="https://i.scdn.co/image/ab67616d0000b273fb7206f0fce46a5edb57a412" alt="Heaven — cover art" loading="eager" />
+        <span class="release-card__disc"></span>
+      </a>
+      <div class="release-card__body">
+        <span class="micro">Now Playing — Single</span>
+        <p class="release-card__name">Heaven</p>
+        <div class="wave" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="release-card__actions">
+          <a class="btn btn--primary" href="https://open.spotify.com/intl-es/track/0nZOUp2o554fSrqqvlqPxd" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            Listen Now
+          </a>
+          <a class="btn btn--ghost" href="#singles">All releases</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <a class="scroll-hint" href="#singles" aria-label="Scroll down">
+    <span>Scroll</span>
+    <span class="scroll-hint__bar"></span>
+  </a>
+</section>
+
+<!-- ░░ LATEST SINGLES ░░ -->
+<section class="section section--singles" id="singles">
+  <div class="section__head">
+    <span class="eyebrow reveal"><span class="pulse"></span> Discography</span>
+    <h2 class="section__title reveal">Latest Singles</h2>
+    <p class="section__lead reveal">A rolling reel of the latest cuts — tap any cover to play it on Spotify.</p>
+  </div>
+
+  <div class="marquee reveal" id="marquee">
+    <div class="marquee__track" id="marqueeTrack">
+      <!-- Set populated twice by JS for a seamless loop -->
+    </div>
+  </div>
+</section>
+
+<!-- ░░ THIS IS SEVENKEY (PLAYLIST) ░░ -->
+<section class="section section--playlist" id="playlist">
+  <div class="playlist__bg" aria-hidden="true"></div>
+  <div class="playlist__grid">
+    <div class="playlist__copy">
+      <span class="eyebrow reveal">
+        <svg class="spotify-mark" viewBox="0 0 168 168" width="20" height="20" aria-hidden="true"><path fill="#1ED760" d="M83.996.277C37.747.277.253 37.77.253 84.019c0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l.001-.004zm38.404 120.78a5.217 5.217 0 01-7.18 1.73c-19.662-12.01-44.414-14.73-73.564-8.07a5.222 5.222 0 01-6.249-3.93 5.213 5.213 0 013.926-6.25c31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-.903-8.148-4.35a6.538 6.538 0 014.354-8.143c30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-.001zm.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219a7.835 7.835 0 015.221-9.771c29.581-8.98 78.756-7.245 109.83 11.202a7.823 7.823 0 012.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739h-.004z"/></svg>
+        Featured Playlist
+      </span>
+      <h2 class="section__title reveal">This Is<br/><span class="accent">Sevenkey</span></h2>
+      <p class="section__lead reveal">
+        The essential collection — every signature record in one place, curated on Spotify.
+        Over 8&nbsp;million listeners and 40+ chart placements worldwide.
+      </p>
+      <a class="btn btn--spotify reveal" href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO4oAszX" target="_blank" rel="noopener">
+        <svg viewBox="0 0 168 168" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M83.996.277C37.747.277.253 37.77.253 84.019c0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l.001-.004zm38.404 120.78a5.217 5.217 0 01-7.18 1.73c-19.662-12.01-44.414-14.73-73.564-8.07a5.222 5.222 0 01-6.249-3.93 5.213 5.213 0 013.926-6.25c31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-.903-8.148-4.35a6.538 6.538 0 014.354-8.143c30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-.001zm.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219a7.835 7.835 0 015.221-9.771c29.581-8.98 78.756-7.245 109.83 11.202a7.823 7.823 0 012.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739h-.004z"/></svg>
+        Play on Spotify
+      </a>
+    </div>
+
+    <div class="playlist__player glass reveal">
+      <iframe
+        title="This Is Sevenkey — Spotify playlist"
+        src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO4oAszX?utm_source=generator&theme=0"
+        width="100%" height="420" frameborder="0" loading="lazy"
+        allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ VIDEOS ░░ -->
+<section class="section section--videos" id="videos">
+  <div class="section__head">
+    <span class="eyebrow reveal"><span class="pulse"></span> Watch</span>
+    <h2 class="section__title reveal">Videos</h2>
+    <p class="section__lead reveal">Live sets from around the world — Spain to the Arctic Circle.</p>
+  </div>
+
+  <div class="videos__grid">
+    <a class="video-card glass reveal tilt" href="https://www.youtube.com/watch?v=jAYN2qIZhFw" target="_blank" rel="noopener">
+      <div class="video-card__thumb">
+        <img src="https://i.ytimg.com/vi/jAYN2qIZhFw/maxresdefault.jpg" alt="Sevenkey live at Girona, Spain" loading="lazy" />
+        <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+      </div>
+      <div class="video-card__meta">
+        <span class="micro">Live DJ Set</span>
+        <p>Sevenkey at Girona, Spain</p>
+      </div>
+    </a>
+
+    <a class="video-card glass reveal tilt" href="https://www.youtube.com/watch?v=a0JH-SIayYY" target="_blank" rel="noopener">
+      <div class="video-card__thumb">
+        <img src="https://i.ytimg.com/vi/a0JH-SIayYY/maxresdefault.jpg" alt="Northern Lights live set at the Arctic Circle" loading="lazy" />
+        <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+      </div>
+      <div class="video-card__meta">
+        <span class="micro">Live Set · Arctic Circle</span>
+        <p>Northern Lights — 2 Nomads B2B Sevenkey</p>
+      </div>
+    </a>
+
+    <a class="video-card glass reveal tilt" href="https://www.youtube.com/watch?v=DSAs2oxENZ0" target="_blank" rel="noopener">
+      <div class="video-card__thumb">
+        <img src="https://i.ytimg.com/vi/DSAs2oxENZ0/maxresdefault.jpg" alt="Sevenkey b2b Inda Horse at Origins, Manizales, Colombia" loading="lazy" />
+        <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+      </div>
+      <div class="video-card__meta">
+        <span class="micro">Opening Set</span>
+        <p>Sevenkey B2B Inda Horse @ ORIGINS, Manizales, Colombia</p>
+      </div>
+    </a>
+
+    <a class="video-card glass reveal tilt" href="https://www.youtube.com/watch?v=4hPCvAm3TZw" target="_blank" rel="noopener">
+      <div class="video-card__thumb">
+        <img src="https://i.ytimg.com/vi/4hPCvAm3TZw/maxresdefault.jpg" alt="Sevenkey B2B Ben Jp at Lost Miracle, Cartagena" loading="lazy" />
+        <span class="play-btn" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+      </div>
+      <div class="video-card__meta">
+        <span class="micro">Afro House Set</span>
+        <p>Sevenkey B2B Ben Jp at Lost Miracle, Cartagena, Col</p>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- ░░ ABOUT (LIGHT SECTION) ░░ -->
+<section class="section section--about light" id="about">
+  <div class="about__grid">
+    <div class="about__portrait reveal">
+      <img src="assets/image/5W8A5224.jpg" alt="Sevenkey portrait" loading="lazy" />
+      <span class="about__tag">Sevenkey · Colombia</span>
+    </div>
+
+    <div class="about__copy">
+      <span class="eyebrow eyebrow--dark reveal"><span class="pulse"></span> About</span>
+      <blockquote class="about__quote reveal">
+        <span class="about__mark">“</span>I like to travel the world to find inspiration for my music
+        and give people a sense of peace and joyfulness through the sounds
+        I&rsquo;m making every week.<span class="about__mark">”</span>
+      </blockquote>
+      <div class="about__bio reveal">
+        <p>
+          Sevenkey is a Colombian DJ and producer, named <strong>“Best Breakthrough DJ Producer”</strong>
+          at the 2016 Colombia Dance Awards. Rooted in the captivating melodies of Afro House, House and
+          Indie Dance, he has carried his sound from Ibiza to Lapland, Santiago, Punta Cana and Tanzania.
+        </p>
+        <p>
+          Released on labels like Sony Music, Loudkult and Soave — and championed by Lost Frequencies,
+          Dash Berlin and The Chainsmokers — his music has reached
+          <strong>nearly 8&nbsp;million listeners</strong> worldwide.
+        </p>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat"><span class="stat__num">8M+</span><span class="stat__label">Listeners worldwide</span></div>
+        <div class="stat"><span class="stat__num">40+</span><span class="stat__label">Charts — Beatport · Spotify</span></div>
+        <div class="stat"><span class="stat__num">5+</span><span class="stat__label">Countries toured</span></div>
+        <div class="stat"><span class="stat__num">2016</span><span class="stat__label">Breakthrough DJ Award</span></div>
+      </div>
+
+      <div class="about__actions reveal">
+        <a class="btn btn--dark" href="https://drive.google.com/drive/folders/1scDqmAA1Ha3WQRYj_EAnhYwzEOacmLwS" target="_blank" rel="noopener">Download Press Kit</a>
+        <a class="btn btn--outline-dark" href="mailto:sevenkeymusic@gmail.com?subject=Booking%20Request%20—%20Sevenkey">Booking</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ SHARED THE STAGE WITH ░░ -->
+<section class="section section--names" id="stage">
+  <div class="section__head section__head--center">
+    <span class="eyebrow reveal"><span class="pulse"></span> Collaborations</span>
+    <h2 class="section__title reveal">Shared the Stage With</h2>
+  </div>
+
+  <div class="names reveal">
+    <div class="names__row">
+      <div class="names__track names__track--left">
+        <span class="name-item">Sebastien Leger</span><span class="name-item">Erick Morillo</span><span class="name-item">Amémé</span><span class="name-item">Rony Seikaly</span><span class="name-item">David Tort</span><span class="name-item">Joezi</span><span class="name-item">Calussa</span>
+        <span class="name-item">Sebastien Leger</span><span class="name-item">Erick Morillo</span><span class="name-item">Amémé</span><span class="name-item">Rony Seikaly</span><span class="name-item">David Tort</span><span class="name-item">Joezi</span><span class="name-item">Calussa</span>
+      </div>
+    </div>
+    <div class="names__row">
+      <div class="names__track names__track--right">
+        <span class="name-item">Apache</span><span class="name-item">Malone</span><span class="name-item">Lost Miracle</span><span class="name-item">Sparrow &amp; Barbossa</span><span class="name-item">Ajna</span><span class="name-item">Jan Blomqvist</span><span class="name-item">2 Nomads</span>
+        <span class="name-item">Apache</span><span class="name-item">Malone</span><span class="name-item">Lost Miracle</span><span class="name-item">Sparrow &amp; Barbossa</span><span class="name-item">Ajna</span><span class="name-item">Jan Blomqvist</span><span class="name-item">2 Nomads</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ PLAYED AT (VENUES) ░░ -->
+<section class="section section--venues" id="venues">
+  <div class="section__head">
+    <span class="eyebrow reveal"><span class="pulse"></span> On Tour</span>
+    <h2 class="section__title reveal">Played At</h2>
+    <p class="section__lead reveal">From the white sand of Ibiza to the Colombian coast — a few of the rooms that have moved to his sound.</p>
+  </div>
+
+  <div class="venues__group">
+    <div class="venues__label reveal"><span class="bar"></span> International <span class="rule"></span></div>
+    <div class="venues__grid">
+      <article class="venue glass reveal tilt"><span class="venue__idx">01</span><span class="venue__name">Destino Pacha</span><span class="venue__city">Ibiza · Spain</span></article>
+      <article class="venue glass reveal tilt"><span class="venue__idx">02</span><span class="venue__name">Lapland</span><span class="venue__city">Finland</span></article>
+      <article class="venue glass reveal tilt"><span class="venue__idx">03</span><span class="venue__name">Zanzibar</span><span class="venue__city">Tanzania</span></article>
+      <article class="venue glass reveal tilt"><span class="venue__idx">04</span><span class="venue__name">Punta Cana</span><span class="venue__city">Dominican Republic</span></article>
+      <article class="venue glass reveal tilt"><span class="venue__idx">05</span><span class="venue__name">Teatro Caupolicán</span><span class="venue__city">Santiago · Chile</span></article>
+    </div>
+  </div>
+
+  <div class="venues__group">
+    <div class="venues__label reveal"><span class="bar"></span> Colombia <span class="rule"></span></div>
+    <div class="venues__grid venues__grid--sm">
+      <article class="venue venue--sm glass reveal tilt"><span class="venue__name">Octava</span><span class="venue__city">Bogotá</span></article>
+      <article class="venue venue--sm glass reveal tilt"><span class="venue__name">Fenix Beach</span><span class="venue__city">Cartagena</span></article>
+      <article class="venue venue--sm glass reveal tilt"><span class="venue__name">Casa Candela</span><span class="venue__city">Medellín</span></article>
+      <article class="venue venue--sm glass reveal tilt"><span class="venue__name">2150</span><span class="venue__city">Manizales</span></article>
+      <article class="venue venue--sm glass reveal tilt"><span class="venue__name">Bethel</span><span class="venue__city">La Guajira</span></article>
+    </div>
+  </div>
+</section>
+
+<!-- ░░ DEMO CTA — MOMENTVM MUSIC ░░ -->
+<section class="section section--demo" id="demo">
+  <a class="demo glass reveal" href="mailto:sevenkeypromos@gmail.com?subject=Demo%20Submission%20for%20Momentvm%20Music" aria-label="Send your demo to Momentvm Music">
+    <span class="demo__logo"><img src="assets/image/MOMENTVM%20LOGO%202026-02.png" alt="Momentvm Music" /></span>
+    <span class="demo__divider"></span>
+    <span class="demo__text">Got Any Tunes?</span>
+    <span class="demo__eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+    <span class="demo__arrow" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </span>
+  </a>
+</section>
+
+<!-- ░░ FOOTER ░░ -->
+<footer class="footer" id="contact">
+  <div class="footer__marquee" aria-hidden="true">
+    <div class="footer__marquee-track">
+      <span>SEVENKEY</span><span>·</span><span>SEVENKEY</span><span>·</span><span>SEVENKEY</span><span>·</span><span>SEVENKEY</span><span>·</span>
+    </div>
+  </div>
+
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="assets/image/SEVENKEY%20LOGO%20WHITE.png" alt="Sevenkey" />
+      <p>Afro House · House · Indie Dance — travelling the world for sound.</p>
+    </div>
+    <div class="footer__links">
+      <a href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO4oAszX" target="_blank" rel="noopener" aria-label="Spotify">
+        <svg viewBox="0 0 168 168" aria-hidden="true"><path fill="currentColor" d="M83.996.277C37.747.277.253 37.77.253 84.019c0 46.251 37.494 83.741 83.743 83.741 46.254 0 83.744-37.49 83.744-83.741 0-46.246-37.49-83.738-83.745-83.738l.001-.004zm38.404 120.78a5.217 5.217 0 01-7.18 1.73c-19.662-12.01-44.414-14.73-73.564-8.07a5.222 5.222 0 01-6.249-3.93 5.213 5.213 0 013.926-6.25c31.9-7.291 59.263-4.15 81.337 9.34 2.46 1.51 3.24 4.72 1.73 7.18zm10.25-22.805c-1.89 3.075-5.91 4.045-8.98 2.155-22.51-13.839-56.823-17.846-83.448-9.764-3.453 1.043-7.1-.903-8.148-4.35a6.538 6.538 0 014.354-8.143c30.413-9.228 68.222-4.758 94.072 11.127 3.07 1.89 4.04 5.91 2.15 8.976v-.001zm.88-23.744c-26.99-16.031-71.52-17.505-97.289-9.684-4.138 1.255-8.514-1.081-9.768-5.219a7.835 7.835 0 015.221-9.771c29.581-8.98 78.756-7.245 109.83 11.202a7.823 7.823 0 012.74 10.733c-2.2 3.722-7.02 4.949-10.73 2.739h-.004z"/></svg>Spotify
+      </a>
+      <a href="https://soundcloud.com/sevenkey-music" target="_blank" rel="noopener" aria-label="SoundCloud">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M1.175 12.225c-.051 0-.094.046-.101.1l-.233 2.154.233 2.105c.007.058.05.098.101.098.05 0 .09-.04.099-.098l.255-2.105-.27-2.154c0-.057-.045-.1-.09-.1m-.899.828c-.06 0-.091.037-.104.094L0 14.479l.165 1.308c.014.06.045.094.09.094s.089-.045.104-.104l.21-1.319-.21-1.334c-.016-.06-.045-.094-.09-.094m1.83-1.229c-.061 0-.12.045-.12.104l-.21 2.563.225 2.458c0 .06.045.12.119.12.061 0 .105-.061.121-.12l.254-2.474-.254-2.548c-.016-.06-.061-.12-.121-.12m.945-.089c-.075 0-.135.06-.15.135l-.193 2.64.21 2.544c.016.077.075.138.149.138.075 0 .135-.061.15-.15l.24-2.532-.24-2.623c0-.075-.06-.135-.135-.135m1.155.36c-.005-.09-.075-.149-.159-.149-.09 0-.158.06-.164.149l-.217 2.43.2 2.563c0 .09.075.157.164.157.084 0 .151-.068.159-.158l.227-2.563-.227-2.444m.928-.45c-.105 0-.181.09-.181.18l-.21 2.91.21 2.582c0 .09.09.18.18.18.105 0 .195-.09.195-.18l.24-2.58-.24-2.927c-.014-.09-.09-.18-.194-.18m.972-1.469c-.12 0-.21.09-.225.21l-.165 4.366.165 2.563c.014.12.105.211.225.211.119 0 .209-.09.225-.211l.18-2.563-.18-4.349c-.016-.12-.105-.225-.225-.225m.989.6c-.135 0-.24.105-.255.24l-.15 3.78.165 2.546c.014.135.119.24.254.24.135 0 .24-.105.24-.24l.18-2.546-.18-3.79c0-.135-.12-.24-.255-.24m1.245-3.825c-.045-.03-.105-.06-.165-.06s-.12.03-.165.06c-.075.06-.119.15-.119.24v.046l-.15 6.929.075 1.275.075 1.244c.014.135.12.255.27.255.149 0 .254-.12.254-.27l.166-2.519-.165-7.005c0-.105-.061-.195-.151-.24m.974.555c-.045-.045-.105-.075-.18-.075-.061 0-.135.03-.18.075-.075.045-.119.135-.119.24l-.15 6.45.165 2.504c.014.149.135.27.284.27.151 0 .271-.121.286-.271l.179-2.519-.179-6.42c-.016-.105-.061-.18-.137-.24m9.965 3.16c-.404 0-.794.082-1.15.226-.24-2.69-2.5-4.799-5.255-4.799-.675 0-1.334.135-1.92.36-.225.09-.285.18-.285.359v9.314c0 .181.135.331.314.36.165.014 6.435.014 6.66.014 1.875 0 3.405-1.514 3.405-3.405 0-1.889-1.53-3.42-3.42-3.42"/></svg>SoundCloud
+      </a>
+      <a href="https://www.youtube.com/@SevenkeyMusic" target="_blank" rel="noopener" aria-label="YouTube">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>YouTube
+      </a>
+      <a href="mailto:sevenkeymusic@gmail.com">Email</a>
+      <a href="https://drive.google.com/drive/folders/1scDqmAA1Ha3WQRYj_EAnhYwzEOacmLwS" target="_blank" rel="noopener">Press Kit</a>
+    </div>
+  </div>
+  <div class="footer__base">
+    <span>© <span id="year"></span> Sevenkey. All rights reserved.</span>
+    <span>Booking — sevenkeymusic@gmail.com · +57 316 387 8252</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
